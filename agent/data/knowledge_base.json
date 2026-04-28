@@ -1,0 +1,51 @@
+[
+  {
+    "id": "KB-001",
+    "category": "Password",
+    "title": "How to reset your Active Directory password",
+    "keywords": ["password", "reset", "locked", "expired", "login", "forgot"],
+    "resolution": "Visit https://aka.ms/sspr or call the helpdesk. Self-service reset is available 24/7."
+  },
+  {
+    "id": "KB-002",
+    "category": "Network",
+    "title": "VPN connection troubleshooting",
+    "keywords": ["vpn", "connect", "network", "remote", "cisco", "anyconnect"],
+    "resolution": "1. Restart the Cisco AnyConnect client. 2. Check VPN gateway status at status.internal. 3. If issue persists, provide output of `ipconfig /all`."
+  },
+  {
+    "id": "KB-003",
+    "category": "Hardware",
+    "title": "Laptop won't power on",
+    "keywords": ["power", "boot", "laptop", "black screen", "won't start", "dead"],
+    "resolution": "1. Hold power button 10s to hard reset. 2. Try known-good charger. 3. If no change, raise P2 ticket for hardware replacement."
+  },
+  {
+    "id": "KB-004",
+    "category": "Software",
+    "title": "Microsoft Teams crash on Windows 11",
+    "keywords": ["teams", "crash", "windows 11", "update", "freezing"],
+    "resolution": "Known issue with latest auto-update. Workaround: use Teams Web (teams.microsoft.com) until patch is deployed. ETA: 48 hours."
+  },
+  {
+    "id": "KB-005",
+    "category": "Access",
+    "title": "Request access to a shared drive or application",
+    "keywords": ["access", "permission", "sharepoint", "drive", "application", "denied"],
+    "resolution": "Submit an access request via the IT portal. Manager approval required for non-standard access. SLA: 1 business day."
+  },
+  {
+    "id": "KB-006",
+    "category": "Security",
+    "title": "Suspected phishing email",
+    "keywords": ["phishing", "suspicious", "email", "malware", "clicked", "link"],
+    "resolution": "Do NOT click any links. Forward the email to security@company.com immediately. If you clicked a link, disconnect from network and call the security hotline."
+  },
+  {
+    "id": "KB-007",
+    "category": "Hardware",
+    "title": "Printer not printing",
+    "keywords": ["printer", "print", "stuck", "queue", "offline"],
+    "resolution": "1. Clear print queue. 2. Restart print spooler service. 3. Reinstall driver from IT portal."
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "OUT-001",
+    "category": "Network",
+    "summary": "VPN gateway degraded — intermittent disconnections affecting east-coast offices",
+    "severity": "P2",
+    "active": true
+  },
+  {
+    "id": "OUT-002",
+    "category": "Software",
+    "summary": "Microsoft Teams desktop app crashing on Windows 11 after last auto-update",
+    "severity": "P3",
+    "active": true
+  },
+  {
+    "id": "OUT-003",
+    "category": "Security",
+    "summary": "MFA push notifications delayed by up to 3 minutes — known issue with Okta",
+    "severity": "P3",
+    "active": true
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "U001": {"name": "Alice Chen",    "role": "Engineer",          "vip": false, "open_tickets": 1},
+  "U002": {"name": "Bob Martinez",  "role": "VP of Engineering",  "vip": true,  "open_tickets": 0},
+  "U003": {"name": "Carol White",   "role": "Analyst",            "vip": false, "open_tickets": 3},
+  "U004": {"name": "David Kim",     "role": "CFO",                "vip": true,  "open_tickets": 0},
+  "U005": {"name": "Eve Johnson",   "role": "Contractor",         "vip": false, "open_tickets": 0},
+  "U006": {"name": "Frank Lee",     "role": "Security Engineer",  "vip": false, "open_tickets": 2},
+  "U007": {"name": "Grace Patel",   "role": "HR Director",        "vip": true,  "open_tickets": 1},
+  "U008": {"name": "Henry Brown",   "role": "Support Staff",      "vip": false, "open_tickets": 5},
+  "UNKNOWN": {"name": "Unknown",    "role": "Unknown",            "vip": false, "open_tickets": 0}
+}
