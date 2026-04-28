@@ -1,0 +1,252 @@
+[
+  {
+    "id": "NRM-001",
+    "user_id": "U001",
+    "input": "My laptop won't connect to the office VPN. I've tried restarting but it still fails with 'connection timed out'.",
+    "expected_category": "Network",
+    "expected_priority": "P2",
+    "expected_action": "create_ticket",
+    "should_escalate": false,
+    "notes": "VPN issue during active outage — should be P2 due to known outage in mock data."
+  },
+  {
+    "id": "NRM-002",
+    "user_id": "U005",
+    "input": "The internet is extremely slow in the London office today. Multiple people are affected.",
+    "expected_category": "Network",
+    "expected_priority": "P2",
+    "expected_action": "create_ticket",
+    "should_escalate": false,
+    "notes": "Multiple users affected — P2."
+  },
+  {
+    "id": "NRM-003",
+    "user_id": "U003",
+    "input": "My Wi-Fi keeps dropping every 10 minutes. It reconnects but it's very disruptive.",
+    "expected_category": "Network",
+    "expected_priority": "P3",
+    "expected_action": "create_ticket",
+    "should_escalate": false,
+    "notes": "Single-user intermittent Wi-Fi — P3."
+  },
+  {
+    "id": "NRM-004",
+    "user_id": "U008",
+    "input": "DNS resolution seems broken — I can ping IP addresses but can't reach any websites by name.",
+    "expected_category": "Network",
+    "expected_priority": "P3",
+    "expected_action": "create_ticket",
+    "should_escalate": false,
+    "notes": "Single-user DNS issue — P3."
+  },
+  {
+    "id": "NRM-005",
+    "user_id": "U006",
+    "input": "I received a suspicious email asking me to click a link and enter my company credentials. I did not click it.",
+    "expected_category": "Security",
+    "expected_priority": "P1",
+    "expected_action": "escalate_to_human",
+    "should_escalate": true,
+    "notes": "Phishing report — always P1 Security, always escalate."
+  },
+  {
+    "id": "NRM-006",
+    "user_id": "U006",
+    "input": "I think my laptop may have been infected. It's running very slowly and I'm seeing pop-ups I didn't install.",
+    "expected_category": "Security",
+    "expected_priority": "P1",
+    "expected_action": "escalate_to_human",
+    "should_escalate": true,
+    "notes": "Suspected malware — P1 Security, escalate."
+  },
+  {
+    "id": "NRM-007",
+    "user_id": "U003",
+    "input": "My MFA push notifications are taking a long time to arrive — sometimes 2-3 minutes. Is this a known issue?",
+    "expected_category": "Security",
+    "expected_priority": "P3",
+    "expected_action": "create_ticket",
+    "should_escalate": false,
+    "notes": "Known MFA delay outage in mock data — P3, ticket is sufficient."
+  },
+  {
+    "id": "NRM-008",
+    "user_id": "U001",
+    "input": "My laptop screen has a crack in the bottom corner. It still works but the crack is growing.",
+    "expected_category": "Hardware",
+    "expected_priority": "P3",
+    "expected_action": "create_ticket",
+    "should_escalate": false,
+    "notes": "Physical hardware damage — P3, not urgent enough for P2."
+  },
+  {
+    "id": "NRM-009",
+    "user_id": "U008",
+    "input": "My laptop won't turn on at all. Pressing the power button does nothing. I have a presentation tomorrow.",
+    "expected_category": "Hardware",
+    "expected_priority": "P2",
+    "expected_action": "create_ticket",
+    "should_escalate": false,
+    "notes": "Complete hardware failure with business impact — P2."
+  },
+  {
+    "id": "NRM-010",
+    "user_id": "U005",
+    "input": "The printer on the 3rd floor is showing offline and no one can print.",
+    "expected_category": "Hardware",
+    "expected_priority": "P3",
+    "expected_action": "create_ticket",
+    "should_escalate": false,
+    "notes": "Shared printer offline — affects multiple but low severity, P3."
+  },
+  {
+    "id": "NRM-011",
+    "user_id": "U003",
+    "input": "My keyboard's space bar stopped working this morning. I can use an on-screen keyboard for now.",
+    "expected_category": "Hardware",
+    "expected_priority": "P4",
+    "expected_action": "create_ticket",
+    "should_escalate": false,
+    "notes": "Has a workaround, single key failure — P4."
+  },
+  {
+    "id": "NRM-012",
+    "user_id": "U001",
+    "input": "Microsoft Teams keeps crashing every time I try to join a meeting. I'm on Windows 11.",
+    "expected_category": "Software",
+    "expected_priority": "P3",
+    "expected_action": "create_ticket",
+    "should_escalate": false,
+    "notes": "Known Teams/Win11 issue in outages mock data — P3."
+  },
+  {
+    "id": "NRM-013",
+    "user_id": "U008",
+    "input": "I need to install Python 3.11 for a project but I don't have admin rights to install software.",
+    "expected_category": "Software",
+    "expected_priority": "P3",
+    "expected_action": "create_ticket",
+    "should_escalate": false,
+    "notes": "Software install request — P3, needs IT to push installer."
+  },
+  {
+    "id": "NRM-014",
+    "user_id": "U003",
+    "input": "Excel crashes every time I open files larger than 50MB. This is blocking my weekly reporting.",
+    "expected_category": "Software",
+    "expected_priority": "P2",
+    "expected_action": "create_ticket",
+    "should_escalate": false,
+    "notes": "Blocking business process — P2."
+  },
+  {
+    "id": "NRM-015",
+    "user_id": "U005",
+    "input": "My Outlook keeps asking me to re-enter my password every few hours even though I'm already logged in.",
+    "expected_category": "Software",
+    "expected_priority": "P3",
+    "expected_action": "create_ticket",
+    "should_escalate": false,
+    "notes": "Repeated auth prompt — annoying but not blocking, P3."
+  },
+  {
+    "id": "NRM-016",
+    "user_id": "U001",
+    "input": "I need read access to the Finance team's SharePoint site for a project I've been assigned to.",
+    "expected_category": "Access",
+    "expected_priority": "P3",
+    "expected_action": "create_ticket",
+    "should_escalate": false,
+    "notes": "Standard access request — P3, needs manager approval via normal process."
+  },
+  {
+    "id": "NRM-017",
+    "user_id": "U005",
+    "input": "I've been getting 'access denied' when trying to open the Q4 budget folder. I had access last month.",
+    "expected_category": "Access",
+    "expected_priority": "P3",
+    "expected_action": "create_ticket",
+    "should_escalate": false,
+    "notes": "Revoked access — P3, needs review."
+  },
+  {
+    "id": "NRM-018",
+    "user_id": "U007",
+    "input": "I need admin access to the HR system to run payroll for the whole company today. It is urgent.",
+    "expected_category": "Access",
+    "expected_priority": "P2",
+    "expected_action": "escalate_to_human",
+    "should_escalate": true,
+    "notes": "VIP user (U007 = HR Director) requesting admin access to payroll — P2, needs human approval."
+  },
+  {
+    "id": "NRM-019",
+    "user_id": "U003",
+    "input": "I forgot my password and can't log in to my laptop.",
+    "expected_category": "Password",
+    "expected_priority": "P3",
+    "expected_action": "auto_resolve",
+    "should_escalate": false,
+    "notes": "Classic password reset — auto-resolve."
+  },
+  {
+    "id": "NRM-020",
+    "user_id": "U008",
+    "input": "My account has been locked out after too many failed attempts. I need it unlocked.",
+    "expected_category": "Password",
+    "expected_priority": "P3",
+    "expected_action": "auto_resolve",
+    "should_escalate": false,
+    "notes": "Account lockout — auto-resolve."
+  },
+  {
+    "id": "NRM-021",
+    "user_id": "U005",
+    "input": "My password expired and the system won't let me set a new one — it says the new password doesn't meet requirements.",
+    "expected_category": "Password",
+    "expected_priority": "P3",
+    "expected_action": "auto_resolve",
+    "should_escalate": false,
+    "notes": "Expired password — SSPR should handle this, auto-resolve."
+  },
+  {
+    "id": "NRM-022",
+    "user_id": "U002",
+    "input": "I can't log in — my password isn't working.",
+    "expected_category": "Password",
+    "expected_priority": "P2",
+    "expected_action": "escalate_to_human",
+    "should_escalate": true,
+    "notes": "U002 is a VIP (VP of Engineering) — VIP + password issue triggers escalation to P2."
+  },
+  {
+    "id": "NRM-023",
+    "user_id": "U001",
+    "input": "Where can I find the IT policy on using personal devices for work?",
+    "expected_category": "General",
+    "expected_priority": "P4",
+    "expected_action": "create_ticket",
+    "should_escalate": false,
+    "notes": "Information request — P4, no system impact."
+  },
+  {
+    "id": "NRM-024",
+    "user_id": "U008",
+    "input": "Can someone set up a new laptop for a new starter joining next Monday?",
+    "expected_category": "General",
+    "expected_priority": "P3",
+    "expected_action": "create_ticket",
+    "should_escalate": false,
+    "notes": "Onboarding request — P3, planned activity."
+  },
+  {
+    "id": "NRM-025",
+    "user_id": "U003",
+    "input": "I'd like to request two extra monitors for my workstation to improve productivity.",
+    "expected_category": "Hardware",
+    "expected_priority": "P4",
+    "expected_action": "create_ticket",
+    "should_escalate": false,
+    "notes": "Equipment request — P4, not urgent."
+  }
+]
